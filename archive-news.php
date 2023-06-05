@@ -7,10 +7,10 @@
 </div><!-- /breadcrumb -->
 <?php endif; ?>
 
-<div class="c-content-bg">Works</div>
+<div class="c-content-bg">News</div>
 <section id="profile" class="l-content">
   <div class="l-inner">
-    <h2 class="c-content__title">制作実績</h2>
+    <h2 class="c-content__title">お知らせ</h2>
     <div class="c-content__body">
       <?php if (have_posts()) : ?>
       <?php while (have_posts()) : ?>
@@ -49,16 +49,6 @@
         <?php endwhile; ?>
         <?php endif; ?>
 
-        <!-- page nation button -->
-        <div class="p-works__page-nation">
-          <div class="p-works__page-link">
-            <?php next_post_link('%link', '<i class="fa-solid fa-angles-left"></i> 前の記事'); ?>
-          </div>
-          <div class="p-works__link-sum"><a href="/works/">実績一覧</a></div>
-          <div class="p-works__page-link">
-            <?php previous_post_link('%link','次の記事 <i class="fa-solid fa-angles-right"></i>' ); ?>
-          </div>
-        </div>
       </div>
     </div>
   </div>
